@@ -1,11 +1,144 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf8">
-        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stray Kids</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="icon" href="/images/skz.jpg">
     </head>
-</html>
 
+    <body>
+        <!--heading of website-->
+        <header>
+            <h1>Stray Kids</h1>
+            <h4>Stray Kids Everywhere All Around The World...</h4>
+            <h4>You Make Stray Kids Stay!</h4>
+        </header>
+
+        <!--navigation bar-->
+        <nav>
+            <a class="active" href="/FED-Assignment1-repo/Index.html">Home</a>
+            <a href="/FED-Assignment1-repo/Members.html">Members</a>
+            <a href="/FED-Assignment1-repo/Achievments.html">Achievements</a>
+            <a href="/FED-Assignment1-repo/Albums.html">Albums</a>
+            <a href="/FED-Assignment1-repo/Content.html">Content</a>
+        </nav>
+
+        <!--intro of the group-->
+        <div class="intro">
+            <div class="skz-intro">
+                <img src="/images/skz-band-1.jpg" alt="Stray Kids">
+            </div>
+            
+            <div class="skz-intro">
+                <h3>The Band</h3>
+                <p>
+                    Stray Kids, also abbreviated as SKZ, is a South Korean boy band formed under JYP Entertainment.
+                    The way they were formed is well documented through the 2017 reality show "Stray Kids". 
+                    The group is composed of eight members, Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin, and I.N. 
+                    Stray Kids released theur pre-debut extended play(EP) Mixtape in january of 2018 with the song "Hellevator".
+                    They then debuted officially on March 25th with the EP "I Am Not", followed by "I Am Who" and "I Am You".
+                    The group generally focuses more on the genres of K-pop, hip hop, and electronica with a lot of electric dance music(EDM)
+                    all over their discography.
+                    They are a self-produced group with 3 of its members, Bang Chan, Changebin, and Han, being heavily involved in their song 
+                    production process, from writing its lyrics to composing the song. 
+                </p>
+            </div>
+        </div>
+
+        <!--intro of fandom name and slogan-->
+        <div class="fans-intro">
+            <div class="the-fans">
+                <img src="/images/skz-fans.jpg" alt="Stray Kids Fans">
+            </div>
+
+            <div class="the-fans">
+                <h3>The Fans</h3>
+                <p>
+                    The fandom name for Stray Kids are called <b>Stays</b>. The creator of the name is none other than Stray Kids' Leader Bang Chan.
+                    By taking away the "R" in the Stray of Stray Kids, only the word would transform into <b>Stay</b>. 
+                    Bang Chan has revealed that the "R" symbolises <b>Reason</b>. The fans are the reason Stray Kids stay, 
+                    as such, the group has decided to call their fans "Stay".
+                </p>
+
+                <h3>The Slogan</h3>
+                <p>
+                    The slogan that is used in all of Stray Kids' music videos is <b>Stray Kids Everywhere All Around The World</b>.
+                    This slogan is a way for Stray Kids to call out to all the people who feel lost and astray, 
+                    and the people who have a hard time finding a direction they want to go in life. It is try and tell them that no matter 
+                    where ever they are and are from, and whoever they are, coming together could creat bonds and make the impossible possible.
+                </p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!--fans counter-->
+        <div class="counter">
+            <script>
+                var clicks = 0;
+
+                function clickME(el) {  
+                    el.disabled = true;
+                    clicks += 1;
+                    document.getElementById("clicks").innerHTML = clicks;
+                }
+            </script>
+
+            <button type="button" onClick="clickME(this)" style="width: 30%; height: 30%; background-color: rgb(225, 134, 231);">
+                <P>Click Here!<P>
+            </button>
+            
+            <h5>To join our fandom of...</h5>
+
+            <h1><a id="clicks">0</a></h1>
+
+            <h5>fans!</h5>
+
+            <p>Thank you all for your support!</p>
+        </div>
+
+        <br><br>   
+
+        <!--social media handles-->
+        <h3 style="text-align: center;">Follow us at...</h3>
+
+        <div class="social-media">
+            <!--Instagram-->
+            <div class="column3">
+                <a href="https://instagram.com/realstraykids?igshid=MTk0NTkyODZkYg==" target="_blank">
+                    <img src="/images/instagram.png" alt="Instagram">
+                </a>  
+            </div>
+
+            <!--Youtube-->
+            <div class="column3">
+                <a href="https://youtube.com/@StrayKids?si=qZIcvr3ocncvWXuw" target="_blank">
+                    <img src="/images/youtube.png" alt="Youtube">
+                </a>
+            </div>
+
+            <!--TikTok-->
+            <div class="column3">
+                <a href="https://www.tiktok.com/@jypestraykids?_t=8hiTO97LlTT&_r=1" target="_blank">
+                    <img src="/images/tiktok.png" alt="TikTok">
+                </a>
+            </div>
+
+            <!--X-->
+            <div class="column3">
+                <a href="https://x.com/Stray_Kids?t=6k_k70JwmcOnlvxc1kageA&s=09" target="_blank">
+                    <img src="/images/twitter-x.png" alt="Twitter">
+                </a>
+            </div>
+
+            <!--Spotify-->
+            <div class="column3">
+                <a href="https://open.spotify.com/artist/2dIgFjalVxs4ThymZ67YCE?si=Pt2PLlhWR7SpacbJ-5rjkg" target="_blank">
+                    <img src="/images/spotify.png" alt="Spotify">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
