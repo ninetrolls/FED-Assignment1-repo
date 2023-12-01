@@ -1,7 +1,7 @@
 body{
     background-color: rgb(237, 199, 240);
     font-family:Arial, Helvetica, sans-serif;
-    padding: 10px;
+    margin: 0;
 }
 
 header{
@@ -10,23 +10,48 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    /*might need position: absolute;*/
 }
 
 nav{
-    background-color: rgb(235, 173, 239);
+    background-color: rgb(231, 114, 240);
+    height: auto;
     text-align: center;
-    position: fixed;
+    overflow:hidden;
+}
+
+nav a{
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+    border: 1px solid black;
+}
+
+nav a:hover{
+    background-color: rgb(237, 199, 240);
+    color: black;
+}
+
+nav a.active{
+    background-color: rgb(235, 173, 239);
+    color: black;
+    padding: 14px 16px;
 }
 
 .intro {
     display: flex;
     width: 100%;
-  }
+}
 
 .skz-intro {
-    flex: 1;
+    flex: 50%;
     padding: 10px;
+}
+
+.skz-intro img{
+    width: 500px;
+    padding: 20px;
 }
 
 .fans-intro{
@@ -35,8 +60,13 @@ nav{
 }
 
 .the-fans{
-    flex: 1;
+    flex: 50%;
     padding: 10px;
+}
+
+.the-fans img{
+    width: 500px;
+    padding: 20px;
 }
 
 .counter{
@@ -147,3 +177,206 @@ nav{
 .dropdown:hover .dropbtn{
     background-color: rgb(226, 90, 236);
 }
+
+.achievements{
+    text-align: center;
+}
+
+li{
+    list-style-position: inside;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: rgb(237, 199, 240);
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    
+    header{
+        background-color: rgb(237, 199, 240);
+        text-align: center; 
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    nav{
+        background-color: rgb(231, 114, 240);
+        height: auto;
+        text-align: center;
+        overflow:hidden;
+    }
+    
+    nav a{
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: large;
+        border: 1px solid black;
+    }
+    
+    nav a:hover{
+        background-color: rgb(237, 199, 240);
+        color: black;
+    }
+    
+    nav a.active{
+        background-color: rgb(235, 173, 239);
+        color: black;
+        padding: 14px 16px;
+    }
+    
+    .intro {
+        display: flex;
+        width: 100%;
+    }
+    
+    .skz-intro {
+        flex: 50%;
+        padding: 10px;
+    }
+    
+    .skz-intro img{
+        width: 500px;
+        padding: 20px;
+    }
+    
+    .fans-intro{
+        display: flex;
+        width: 100%;
+    }
+    
+    .the-fans{
+        flex: 50%;
+        padding: 10px;
+    }
+    
+    .the-fans img{
+        width: 500px;
+        padding: 20px;
+    }
+    
+    .counter{
+        text-align: center;
+        background-color: rgb(235, 173, 239);
+        padding: 40px;
+        height: 70%;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .social-media{
+        display: flex;
+        padding: 20px;
+    }
+    
+    .column3{
+        flex: 20%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .column3:hover{
+        background-color: rgb(235, 173, 239);
+    }
+    
+    .column3 img{
+        width: 50px;
+    }
+    
+    .row{
+        display: flex;
+        clear: both;
+    }
+    
+    .column{
+        flex: 100%;
+        padding: 50px;
+    }
+    
+    .content{
+        text-align: center;
+    }
+    
+    .row2{
+        display: flex;
+        clear: both;
+    }
+    
+    .column2{
+        flex: 25%;
+        padding: 10px;
+    }
+    
+    .column2 iframe{
+        width: 100%;
+    }
+    
+    .albums{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .albums iframe{
+        width: 80%;
+        height: 500px;
+        padding: 20px;
+    }
+    
+    .dropbtn{
+        background-color: rgb(231, 114, 240);
+        color: black;
+        padding: 8px;
+        font-size: 16px;
+        border: none;
+    }
+    
+    .dropdown{
+        position: fixed;
+        display: inline-block;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: rgb(235, 173, 239);
+        min-width: 80px;
+        z-index: 1;
+    }
+    
+    .dropdown-content a{
+        color:black;
+        padding: 4px 8px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover{
+        background-color: rgb(237, 199, 240);
+    }
+    
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn{
+        background-color: rgb(226, 90, 236);
+    }
+    
+    .achievements{
+        text-align: center;
+    }
+    
+    .achievements img{
+        height: 60%;
+        width: auto;
+    }
+
+    li{
+        list-style-position: inside;
+    }
+}
+
+
